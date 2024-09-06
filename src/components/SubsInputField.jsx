@@ -2,7 +2,7 @@ const stylesFormInput = 'flex items-center rounded-2xl bg-gray-300 p-4';
 const stylesFormLabel = 'text-sm font-semibold text-gray-600 mb-1';
 const stylesFromContainer = 'flex flex-col mb-4';
 
-export const SubsField = (props) => {
+export const SubsInputField = (props) => {
   const { className } = props;
   const { textLabel, type, id } = props;
 
