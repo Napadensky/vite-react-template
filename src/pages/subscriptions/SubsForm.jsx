@@ -1,7 +1,11 @@
+import { Link, useParams } from 'react-router-dom';
+
 const stylesFormInput = 'flex items-center rounded-2xl bg-gray-300 p-4';
 const stylesFormLabel = 'text-sm font-semibold text-gray-600 mb-1';
 const stylesFromContainer = 'flex flex-col mb-4';
 export const SubsForm = () => {
+  const { id } = useParams();
+
   return (
     <div className='text-left'>
       <form action='' className=' '>
@@ -54,9 +58,13 @@ export const SubsForm = () => {
         </div>
 
         <div className={`flex justify-between gap-2`}>
-          <button className='w-6/12 rounded-full bg-gray-300 px-4 py-2'>
+          <Link
+            to={`/SubsDetail/${id}`}
+            className='w-6/12 rounded-full bg-gray-300 px-4 py-2 text-center'
+          >
             Cancelar
-          </button>
+          </Link>
+
           <button className='w-6/12 rounded-full bg-gray-600 px-4 py-2'>
             Enviar
           </button>
