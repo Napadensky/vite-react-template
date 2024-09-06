@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
 
-export const SubsNav = () => {
+export const SubsNav = (props) => {
+  const { className } = props;
+
   return (
-    <header className='mb-8 flex min-h-14 w-full bg-gray-300'>
+    <header className={`mb-8 flex min-h-14 w-full bg-gray-300 ${className}`}>
       <nav className='m-auto flex w-11/12 items-center justify-between'>
         <div className=''>
           <svg

@@ -9,8 +9,6 @@ export const SubsCard = (props) => {
     <div className={`${styleSubsCard} ${className}`}>
       <div id='SubsCardImg' className='h-40 flex-auto overflow-hidden'>
         <img
-          // width={'100%'}
-          // height={'100%'}
           src='https://picsum.photos/200/300'
           alt='Random'
           className='h-full w-full bg-cover'

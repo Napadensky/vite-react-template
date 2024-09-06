@@ -1,22 +1,18 @@
 import { Route, Routes } from 'react-router-dom';
 
-import { SubsDetail } from '@/pages/subscriptions/SubsDetail';
-import { SubsForm } from '@/pages/subscriptions/SubsForm';
-import { SubsHome } from '@/pages/subscriptions/SubsHome';
-import { SubsLayuot } from '@/pages/subscriptions/SubsLayuot';
+import { SubsRoutes } from '@/pages/subscriptions/SubsRoutes';
+import { DashRoutes } from '@/pages/dashboard/DashRoutes';
+import { LoginRoutes } from '@/pages/login/LoginRoutes';
 
 export const MapRoutes = () => {
+  // const error = useRouteError();
+  // console.error(error);
+
   return (
-    <>
-      <Routes>
-        <Route element={<SubsLayuot />}>
-          <Route index exact path='' element={<SubsHome />} />
-          <Route path='SubsDetail/:id' element={<SubsDetail />} />
-          <Route path='SubsDetail/' element={<SubsDetail />} />
-          <Route path='SubsForm/:id' element={<SubsForm />} />
-          <Route path='*' element={<h1>Not Found</h1>} />
-        </Route>
-      </Routes>
-    </>
+    <Routes>
+      <Route path='/*' index={true} element={<SubsRoutes />} />
+      <Route path='/dashboard/*' element={<DashRoutes />} />
+      <Route path='/login/*' index={true} element={<LoginRoutes />} />
+    </Routes>
   );
 };
