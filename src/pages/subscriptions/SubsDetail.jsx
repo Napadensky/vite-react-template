@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { projects } from '../../../mocks/projects';
 
 export const SubsDetail = () => {
@@ -35,9 +35,12 @@ export const SubsDetail = () => {
       </div>
 
       <div className='w-full'>
-        <button className='m-auto rounded-full bg-gray-300 px-8 py-2'>
+        <Link
+          to={`/SubsForm/${id}`}
+          className='m-auto rounded-full bg-gray-300 px-8 py-2'
+        >
           Inscribirme
-        </button>
+        </Link>
       </div>
     </div>
   );
