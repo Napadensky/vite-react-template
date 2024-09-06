@@ -1,12 +1,13 @@
 const styleSubsCard =
-  'flex h-80 w-60 flex-col overflow-auto rounded-xl border border-gray-300 shadow-lg';
+  'flex w-60 flex-col overflow-auto rounded-xl border border-gray-300 shadow-lg';
 
 export const SubsCard = (props) => {
   const { className } = props;
   // const { img, title, id } = props;
+
   return (
     <div className={`${styleSubsCard} ${className}`}>
-      <div id='SubsCardImg' className='flex-auto overflow-hidden'>
+      <div id='SubsCardImg' className='h-40 flex-auto overflow-hidden'>
         <img
           // width={'100%'}
           // height={'100%'}
@@ -20,7 +21,7 @@ export const SubsCard = (props) => {
         <p>Organizado por el squad 15</p>
       </div>
       <div id='SubsCardAction' className='p-4'>
-        <button className='rounded-lg bg-gray-400 px-4 py-2'>
+        <button className='rounded-lg bg-gray-300 px-4 py-2'>
           Mas Informacion
         </button>
       </div>
