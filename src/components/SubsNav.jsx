@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export const SubsNav = () => {
   return (
     <header className='mb-8 flex min-h-14 w-full bg-gray-300'>
@@ -14,7 +16,9 @@ export const SubsNav = () => {
           </svg>
         </div>
         <div className=''>
-          <h5 className='font-bold'>Polo IT</h5>
+          <h5 className='font-bold'>
+            <Link to={'/'}>Polo IT</Link>
+          </h5>
         </div>
         <div className='rounded-s-full'>
           <img
