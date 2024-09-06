@@ -1,6 +1,6 @@
 export const SubsNav = () => {
   return (
-    <header className='mb-8 flex h-14 w-full bg-gray-300'>
+    <header className='mb-8 flex min-h-14 w-full bg-gray-300'>
       <nav className='m-auto flex w-11/12 items-center justify-between'>
         <div className=''>
           <svg

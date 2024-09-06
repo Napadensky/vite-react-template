@@ -21,7 +21,7 @@ export const SubsCard = (props) => {
         <p>Organizado por el squad 15</p>
       </div>
       <div id='SubsCardAction' className='p-4'>
-        <button className='rounded-lg bg-gray-300 px-4 py-2'>
+        <button className='rounded-full bg-gray-300 px-4 py-2'>
           Mas Informacion
         </button>
       </div>

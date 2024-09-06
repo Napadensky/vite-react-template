@@ -1,7 +1,7 @@
 import { SubsCard } from '@/components/SubsCard';
 import { SubsSearchBar } from '@/components/SubsSearchBar';
 
-import { proyects } from '../../../mocks/proyects';
+import { projects } from '../../../mocks/projects';
 import { SubsCardHorizontally } from '@/components/SubsCardHorizontally';
 
 export const SubsHome = () => {
@@ -9,13 +9,14 @@ export const SubsHome = () => {
     <>
       <SubsCard className='m-auto mb-6' />
       <SubsSearchBar className='my-6' />
-      {proyects.map((proyect, index) => (
+      {projects.map((project) => (
         <SubsCardHorizontally
-          key={index}
           className='m-auto mb-6'
-          img={proyect.img}
-          title={proyect.title}
-          description={proyect.description}
+          description={project.description}
+          id={project._id}
+          img={project.img}
+          key={project._id}
+          title={project.title}
         />
       ))}
     </>

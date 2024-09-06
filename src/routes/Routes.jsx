@@ -11,8 +11,10 @@ export const MapRoutes = () => {
       <Routes>
         <Route element={<SubsLayuot />}>
           <Route index exact path='' element={<SubsHome />} />
-          <Route path='SubsDetail' element={<SubsDetail />} />
+          <Route path='SubsDetail/:id' element={<SubsDetail />} />
+          <Route path='SubsDetail/' element={<SubsDetail />} />
           <Route path='SubsForm' element={<SubsForm />} />
+          <Route path='*' element={<h1>Not Found</h1>} />
         </Route>
       </Routes>
     </>

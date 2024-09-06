@@ -1,9 +1,9 @@
 const stylesSubsSearchBar =
-  'm-auto flex h-14 w-11/12 items-center rounded-full bg-gray-300 px-4';
+  'w-full flex h-14 items-center rounded-full bg-gray-300 px-4';
 
 export const SubsSearchBar = (props) => {
   const { className } = props;
-  
+
   return (
     <div className={`${stylesSubsSearchBar} ${className}`}>
       <input
